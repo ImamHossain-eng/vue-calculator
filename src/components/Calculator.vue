@@ -63,19 +63,19 @@ export default{
             this.operatorClicked = true;
         },
         divide() { 
-            this.operator = (a, b) => a/b;
+            this.operator = (b, a) => a/b;
             this.setPrevious();
         },
         times() {
-            this.operator = (a, b) => a * b;
+            this.operator = (a, b) => a*b;
             this.setPrevious();
         },
         minus() {
-            this.operator = (a, b) => a - b;
+            this.operator = (b, a) => a-b;
             this.setPrevious();
         },
         add() {
-            this.operator = (a, b) => a + b;
+            this.operator = (a, b) => a+b;
             this.setPrevious();             
         },
         equal() {
@@ -84,7 +84,6 @@ export default{
                 parseFloat(this.previous)
             )}`;
             this.previous = null;
-
         }
     }
 }
