@@ -63,7 +63,7 @@ export default{
             this.operatorClicked = true;
         },
         divide() { 
-            this.operator = (a, b) => a / b;
+            this.operator = (a, b) => a/b;
             this.setPrevious();
         },
         times() {
@@ -83,6 +83,7 @@ export default{
                 parseFloat(this.current),
                 parseFloat(this.previous)
             )}`;
+            this.previous = null;
 
         }
     }
