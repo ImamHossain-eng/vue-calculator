@@ -109,8 +109,13 @@ export default{
 }
 .btn{
     padding: 2rem 1rem;
+    cursor: pointer;
     background-color: #f2f2f2;
     border: 1px solid #333;
+}
+.btn:hover{
+    transition: .5s;
+    transform: scale(1.1);
 }
 .operator{
     background-color: darkorange;
